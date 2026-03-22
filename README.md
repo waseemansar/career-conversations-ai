@@ -60,7 +60,7 @@ When the agent can’t answer a question or a user asks to contact you, it can t
 #### 1) Clone
 
 ```bash
-git clone https://github.com/your-repo/career-conversations-ai.git
+git clone https://github.com/waseemansar/career-conversations-ai.git
 cd career-conversations-ai
 ```
 
