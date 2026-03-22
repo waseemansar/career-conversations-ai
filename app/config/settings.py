@@ -18,6 +18,7 @@ class Settings(BaseSettings):
 
     env: ENVIRONMENT = "development"
     log_level: LogLevel = "INFO"
+    port: int = 8000
 
     app_owner: str
     app_name: str = "Career Conversations AI"
