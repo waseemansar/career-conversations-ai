@@ -1,0 +1,4 @@
+[deploy]
+startCommand = "python -m app.main"
+healthcheckPath = "/docs"
+healthcheckTimeout = 30
