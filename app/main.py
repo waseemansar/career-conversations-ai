@@ -59,4 +59,5 @@ if __name__ == "__main__":
         port=settings.port,
         reload=not settings.is_production,
         log_level=settings.log_level.lower(),
+        timeout_graceful_shutdown=settings.shutdown_timeout,  # Gradio keeps connections open, force close after 5s
     )

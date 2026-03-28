@@ -17,7 +17,7 @@ def push(message: str) -> None:
             },
             timeout=5,
         )
-
+        logger.info(f"Pushover response: {response.text}")
         response.raise_for_status()
     except requests.exceptions.Timeout:
         logger.error("Pushover request timed out")

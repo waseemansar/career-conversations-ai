@@ -16,17 +16,20 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
+    shutdown_timeout: int = 5
+
     env: ENVIRONMENT = "development"
     log_level: LogLevel = "INFO"
     port: int = 8000
 
-    app_owner: str
     app_name: str = "Career Conversations AI"
     app_description: str = (
         "RAG-based career assistant built with FastAPI, Qdrant, Redis, and Gradio."
     )
     app_version: str = "1.0.0"
     welcome_message: str = ""
+
+    app_owner: str
     avatar_path: str | None = None
 
     openai_api_key: str
