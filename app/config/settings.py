@@ -54,8 +54,9 @@ class Settings(BaseSettings):
     def set_welcome_message(self) -> "Settings":
         if not self.welcome_message:
             self.welcome_message = (
-                f"Hi, I'm {self.app_owner}'s AI agent. Welcome! "
-                "Ask me anything about my background, skills, and experience."
+                f"Hi there! 👋 I'm {self.app_owner}'s AI assistant. "
+                "I can answer questions about his background, skills, experience, and projects. "
+                "What would you like to know?"
             )
 
         return self
